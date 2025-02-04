@@ -14,15 +14,14 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
-  
-  "overrides": {
-    "glob": "9.3.5"
-  },
   "scripts": {
     "test": "jest",
     "lint": "eslint",
     "start": "webpack serve --env development",
     "build": "webpack --env production"
+  },
+  "dependencies": {
+    "core-js": "^3.40.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
@@ -42,7 +41,7 @@
     "webpack-dev-server": "^5.2.0",
     "webpack-merge": "^6.0.1"
   },
-  "dependencies": {
-    "core-js": "^3.40.0"
+  "overrides": {
+    "glob": "9.3.5"
   }
 }
